@@ -1,0 +1,10 @@
+My listener uses an AWS server running Ubuntu to support Apache web server and PHP.  With a Bash script and a crontab job, I am able to fulfill the requirements of the listening service.
+
+To get the notification in GitHub configured properly, open a web browser.  Log into GitHub.  Go here: https://github.com/organizations/oct2/settings/profile
+Go to Webhooks.  Click "Add webhook"
+For Payload URL, enter this: http://x.x.x.x/good.php  
+(where x.x.x.x is the external IP address of the Apache web server)
+Click the radio button for "Let me select individual events"
+Uncheck "Pushes"
+Check "Repositories"
+click "Add Webhook"
